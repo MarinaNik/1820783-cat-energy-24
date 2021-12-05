@@ -3,7 +3,7 @@
   position: relative;
   min-width: 320px;
   min-height: 302px;
-  background-color: $basic-green;
+  background: linear-gradient(to bottom, rgb(104, 183, 56) 63%, rgb(255, 255, 255) 63%);
   background-image: url("../../img/index/promo-background-color.png"), url("../../img/index/promo-background.png");
   background-position: top center;
   background-size: contain;
