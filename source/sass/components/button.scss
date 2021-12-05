@@ -1,0 +1,26 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+  background-color: $basic-green;
+  cursor: pointer;
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--secondary {
+    color: $special_dark-grey;
+    background-color: $basic_grey;
+  }
+}
