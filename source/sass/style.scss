@@ -6,18 +6,18 @@
 
 //Components
 
-@import "./components/page-main.scss";
 @import "./components/page-header.scss";
 @import "./components/logo.scss";
 @import "./components/site-list.scss";
+@import "./components/page-main.scss";
+@import "./components/page-footer.scss";
 @import "./components/contacts.scss";
 @import "./components/social.scss";
-@import "./components/page-footer.scss";
 @import "./components/copyright.scss";
+@import "./components/button.scss";
 
 //Index
 
-@import "./components/button.scss";
 @import "./components/promo.scss";
 @import "./components/offer.scss";
 @import "./components/function.scss";
@@ -39,4 +39,3 @@
 @import "./components/select-form.scss";
 @import "./components/purpose-list.scss";
 @import "./components/additional-list.scss";
-

@@ -14,10 +14,10 @@
   padding: 21px;
   padding-bottom: 18px;
   background-color: $basic_grey;
-}
 
-.offer__item:first-child {
-  margin-bottom: 20px;
+  &:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 .offer__title {

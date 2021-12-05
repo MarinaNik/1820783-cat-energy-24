@@ -36,20 +36,20 @@
   padding: 15px;
   padding-bottom: 0;
   text-align: center;
-}
 
-.example__purpose-item:not(:last-child) {
-  margin-right: 52px;
-}
+  &:not(:last-child) {
+    margin-right: 52px;
+  }
 
-.example__purpose-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -15px;
-  width: 124px;
-  height: 56px;
-  background-image: url("../../img/index/example-weight.svg");
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 124px;
+    height: 56px;
+    background-image: url("../../img/index/example-weight.svg");
+  }
 }
 
 .example__item--view-after {
