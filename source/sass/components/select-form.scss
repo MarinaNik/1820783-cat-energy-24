@@ -1,7 +1,7 @@
 .select-form {
   font-size: 16px;
   text-transform: uppercase;
-  color: $special_dark-grey;
+  color: $gray-68;
 }
 
 .select-form__fieldset {
@@ -14,7 +14,7 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
-  color: $basic-black;
+  color: $black;
 }
 
 .select-form__field {
@@ -25,8 +25,8 @@
   line-height: 18px;
   font-family: inherit;
   text-transform: uppercase;
-  color: $special_dark-grey;
-  border: 1px solid $lightest-gray;
+  color: $gray-68;
+  border: 1px solid $gray-231;
   appearance: none;
 }
 
@@ -37,14 +37,14 @@
   line-height: 18px;
   font-family: inherit;
   text-transform: uppercase;
-  color: $special_dark-grey;
-  border: 1px solid $lightest-gray;
+  color: $gray-68;
+  border: 1px solid $gray-231;
 }
 
 .select-form__comment {
   font-size: 14px;
   line-height: 16px;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-secondary;
   text-transform: none;
-  color: $basic-black;
+  color: $black;
 }

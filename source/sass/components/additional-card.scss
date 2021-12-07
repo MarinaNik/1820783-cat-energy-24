@@ -1,9 +1,9 @@
 .additional-card {
   min-width: 280px;
-  border-bottom: 1px solid $special_grey;
+  border-bottom: 1px solid $gray-205;
 
   &:first-child {
-    border-top: 1px solid $special_grey;
+    border-top: 1px solid $gray-205;
   }
 }
 
@@ -13,11 +13,11 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $special_dark-grey-2;
+  color: $gray-34;
 }
 
 .additional-card__info {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-secondary;
   line-height: 14px;
-  color: $special_dark-grey;
+  color: $gray-68;
 }

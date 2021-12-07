@@ -10,8 +10,8 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: $white;
+  background-color: $green;
   cursor: pointer;
 
   &--promo {
@@ -20,7 +20,7 @@
   }
 
   &--secondary {
-    color: $special_dark-grey;
-    background-color: $basic_grey;
+    color: $gray-68;
+    background-color: $gray-242;
   }
 }

@@ -13,8 +13,8 @@
 }
 
 .function__item {
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: $special_dark-grey;
+  font-family: $font-secondary;
+  color: $gray-68;
 
   &:not(:last-child) {
     margin-bottom: 20px;

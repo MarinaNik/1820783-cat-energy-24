@@ -1,10 +1,10 @@
 .promo {
-  color: $basic-white;
+  color: $white;
   position: relative;
   min-width: 320px;
   min-height: 302px;
-  background: linear-gradient(to bottom, rgb(104, 183, 56) 63%, rgb(255, 255, 255) 63%);
-  background-image: url("../img/index/promo-background-color.png"), url("../img/index/promo-background.png");
+  background: linear-gradient(to bottom, $green 63%, transparent 63%);
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, transparent 63%), url("../img/index/promo-background.jpg");
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;

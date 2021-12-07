@@ -1,5 +1,5 @@
 .example {
-  background-color: $extra-light-gray;
+  background-color: $gray-234;
 }
 
 .example__wrapper {
@@ -20,8 +20,8 @@
 .example__text {
   margin: 0;
   padding: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: $special_dark-grey;
+  font-family: $font-secondary;
+  color: $gray-68;
 }
 
 .example__purpose-list {
@@ -67,7 +67,7 @@
 
 .example__description {
   margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-secondary;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -95,7 +95,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: $basic-black;
+  color: $black;
   border: none;
   background-color: transparent;
   cursor: pointer;
