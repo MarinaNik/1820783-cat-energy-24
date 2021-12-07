@@ -1,0 +1,23 @@
+.additional-card {
+  min-width: 280px;
+  border-bottom: 1px solid $gray-205;
+
+  &:first-child {
+    border-top: 1px solid $gray-205;
+  }
+}
+
+.additional-card__name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $gray-34;
+}
+
+.additional-card__info {
+  font-family: $font-secondary;
+  line-height: 14px;
+  color: $gray-68;
+}

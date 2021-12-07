@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+//Global
+
+@import "./global/typography.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+
+//Components
+
+@import "./components/page-header.scss";
+@import "./components/logo.scss";
+@import "./components/site-list.scss";
+@import "./components/page.scss";
+@import "./components/page-main.scss";
+@import "./components/page-footer.scss";
+@import "./components/contacts.scss";
+@import "./components/social.scss";
+@import "./components/copyright.scss";
+@import "./components/button.scss";
+
+//Index
+
+@import "./components/promo.scss";
+@import "./components/offer.scss";
+@import "./components/function.scss";
+@import "./components/example.scss";
+
+//Catalog
+
+@import "./components/page-catalog.scss";
+@import "./components/catalog.scss";
+@import "./components/card.scss";
+@import "./components/more-info.scss";
+@import "./components/additional-goods.scss";
+@import "./components/additional-card.scss";
+@import "./components/banner.scss";
+
+//Form
+
+@import "./components/page-form.scss";
+@import "./components/select-form.scss";
+@import "./components/purpose-list.scss";
+@import "./components/additional-list.scss";

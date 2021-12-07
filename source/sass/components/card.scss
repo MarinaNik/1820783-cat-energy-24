@@ -1,0 +1,29 @@
+.card {
+  min-width: 280px;
+  padding-top: 11px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $gray-34;
+}
+
+.card__list {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-secondary;
+  color: $gray-68;
+}
+
+.card__description {
+  margin: 0;
+}

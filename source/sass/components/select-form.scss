@@ -1,0 +1,50 @@
+.select-form {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $gray-68;
+}
+
+.select-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.select-form__title {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $black;
+}
+
+.select-form__field {
+  box-sizing: border-box;
+  padding: 14px 15px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: $gray-68;
+  border: 1px solid $gray-231;
+  appearance: none;
+}
+
+.select-form__comment-textarea {
+  padding: 9px 12px;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: $gray-68;
+  border: 1px solid $gray-231;
+}
+
+.select-form__comment {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-secondary;
+  text-transform: none;
+  color: $black;
+}
