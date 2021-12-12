@@ -17,6 +17,13 @@
   &--promo {
     font-size: 14px;
     line-height: 18px;
+    padding: 9px 72px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 17px 29px;
+    }
   }
 
   &--secondary {
