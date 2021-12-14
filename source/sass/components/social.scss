@@ -1,11 +1,20 @@
 .social {
   min-width: 280px;
-  border-top: 1px $gray-230;
-  border-bottom: 1px $gray-230;
+  text-align: center;
+  border-top: 1px solid $gray-217;
+  border-bottom: 1px solid $gray-217;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__list {
   margin: 0;
   padding: 0;
+  min-width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
 }

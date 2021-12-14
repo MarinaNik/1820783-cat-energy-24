@@ -1,5 +1,19 @@
 .page-header__wrapper {
-  min-width: 280px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-width: 1220px;
+    max-width: 1330px;
+    padding-right: 55px;
+    padding-left: 55px;
+  }
 }

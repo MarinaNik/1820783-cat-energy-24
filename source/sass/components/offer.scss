@@ -1,22 +1,67 @@
 .offer__wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-width: 1220px;
+    max-width: 1330px;
+    padding-top: 21px;
+    padding-right: 55px;
+    padding-left: 55px;
+  }
 }
 
 .offer__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .offer__item {
   padding: 21px;
-  padding-bottom: 18px;
+  padding-top: 30px;
+  padding-bottom: 21px;
   background-color: $gray-242;
 
   &:first-child {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 57px;
+    padding-left: 53px;
+    padding-right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-bottom: 0;
   }
 }
 
@@ -27,6 +72,20 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 106px;
+    margin-bottom: 73px;
+  }
 }
 
 .offer__text {
@@ -34,11 +93,28 @@
   padding: 0;
   font-family: $font-secondary;
   color: $gray-68;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 53px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 28px;
+  }
 }
 
 .offer__item-wrapper {
-  padding-top: 15px;
+  padding-top: 17px;
   border-top: 1px solid $gray-230;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    border-top: none;
+  }
 }
 
 .offer__link {
@@ -47,4 +123,11 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
