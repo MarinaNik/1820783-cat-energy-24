@@ -1,4 +1,5 @@
 .page {
+  margin: 0 auto;
   min-width: 320px;
   height: 100%;
   font-family: $deafult-font;
@@ -7,6 +8,13 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    min-width: 768px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1330px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -21,12 +29,12 @@
   background-color: $white;
 }
 
-.page__background-index {
+.page__body--index {
   @media (min-width: $desktop-width) {
     background: linear-gradient(to bottom, $green 50%, transparent 50%);
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop.jpg");
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50% 80%, 50% 80%;
+    background-size: 50% 53vw, 50% 53vw;
   }
 }

@@ -14,7 +14,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     min-width: 1220px;
+    max-width: 1330px;
     padding-top: 51px;
     padding-right: 55px;
     padding-left: 55px;
@@ -23,6 +25,7 @@
 }
 
 .function__list {
+  counter-reset: section;
   margin: 0;
   padding: 0;
   padding-left: 78px;
@@ -40,7 +43,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 94px;
   }
@@ -49,6 +51,21 @@
 .function__item {
   font-family: $font-secondary;
   color: $gray-68;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: section;
+      content: counters(section, "");
+      position: absolute;
+      font-family: $deafult-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $gray-242;
+      top: 0;
+      right: 3px;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -64,59 +81,15 @@
     }
   }
 
-  &--good::before {
+  &--cooking::after {
     @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "1";
-      font-family: $deafult-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $gray-242;
-      top: 0;
-      right: 3px;
-      z-index: -1;
-    }
-  }
-
-  &--cooking::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "2";
-      font-family: $deafult-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $gray-242;
-      top: 0;
       right: -14px;
-      z-index: -1;
     }
   }
 
-  &--change::before {
+  &--change::after {
     @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "3";
-      font-family: $deafult-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $gray-242;
-      top: 0;
       right: -18px;
-      z-index: -1;
-    }
-  }
-
-  &--enjoy::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "4";
-      font-family: $deafult-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $gray-242;
-      top: 0;
-      right: 3px;
-      z-index: -1;
     }
   }
 }
