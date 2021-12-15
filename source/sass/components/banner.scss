@@ -1,24 +1,64 @@
 .banner {
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.banner__wrapper {
   box-sizing: border-box;
   position: relative;
   padding: 58px;
   padding-top: 188px;
   padding-bottom: 43px;
-  width: 280px;
   min-height: 290px;
-  background-color: $green;
+  background-color: #68b738;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 422px;
+    padding-top: 71px;
+    padding-bottom: 69px;
+    min-height: 200px;
+    background-position: 50% 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 43px;
+    padding-right: 41px;
+    padding-top: 185px;
+    padding-bottom: 42px;
+    height: 100%;
+    background-position: center;
+  }
 }
 
 .banner__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 161px;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    text-align: center;
+  }
 }

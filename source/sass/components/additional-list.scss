@@ -3,4 +3,41 @@
   padding: 0;
   list-style-type: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 57px;
+    row-gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1196px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 57px;
+  }
+}
+
+.additional-list__item {
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.additional-list__control {
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
 }
