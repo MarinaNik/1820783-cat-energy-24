@@ -49,66 +49,62 @@
       <p class="page-form__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="page-form__select select-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="select-form__grid-wrapper">
-          <div class="select-form__border">
-            <div class="select-form__wrapper">
-              <fieldset class="select-form__fieldset select-form__fieldset--cat">
-                <legend class="visually-hidden">Параметры кота</legend>
-                <p class="select-form__data select-form__data--name">
-                  <label class="select-form__label select-form__label--flex" for="select-name">
-                    Имя:*
-                  </label>
-                  <input class="select-form__field select-form__field--flex" type="text" id="select-name"
-                    name="select-name" placeholder="БАРСИК">
-                </p>
-                <p class="select-form__data select-form__data--weight">
-                  <label class="select-form__label select-form__label--flex" for="select-weight">
-                    Вес (кг):*
-                  </label>
-                  <input class="select-form__field select-form__field--flex" type="number" id="select-weight"
-                    name="select-weight" placeholder="7">
-                </p>
-                <p class="select-form__data select-form__data--age">
-                  <label class="select-form__label select-form__label--flex" for="select-age">
-                    Возраст&nbsp;(лет):
-                  </label>
-                  <input class="select-form__field select-form__field--flex" type="number" id="select-age"
-                    name="select-age" placeholder="7">
-                </p>
-              </fieldset>
-            </div>
+          <div class="select-form__wrapper select-form__wrapper--border select-form__fieldset--cat">
+            <fieldset class="select-form__fieldset">
+              <legend class="visually-hidden">Параметры кота</legend>
+              <p class="select-form__data select-form__data--name">
+                <label class="select-form__label select-form__label--flex" for="select-name">
+                  Имя:*
+                </label>
+                <input class="select-form__field select-form__field--flex" type="text" id="select-name"
+                  name="select-name" placeholder="БАРСИК">
+              </p>
+              <p class="select-form__data select-form__data--weight">
+                <label class="select-form__label select-form__label--flex" for="select-weight">
+                  Вес (кг):*
+                </label>
+                <input class="select-form__field select-form__field--flex" type="number" id="select-weight"
+                  name="select-weight" placeholder="7">
+              </p>
+              <p class="select-form__data select-form__data--age">
+                <label class="select-form__label select-form__label--flex" for="select-age">
+                  Возраст&nbsp;(лет):
+                </label>
+                <input class="select-form__field select-form__field--flex" type="number" id="select-age"
+                  name="select-age" placeholder="7">
+              </p>
+            </fieldset>
           </div>
-          <div class="select-form__border">
-            <div class="select-form__wrapper select-form__wrapper--border">
-              <fieldset class="select-form__fieldset select-form__fieldset--purpose">
-                <legend class="visually-hidden">Цель программы</legend>
-                <ul class="select-form__list purpose-list">
-                  <li class="purpose-list__item">
-                    <label class="purpose-list__control">
-                      <input class="visually-hidden" type="radio" name="purpose-group" value="slimming" checked>
-                      <span class="purpose-list__mark"></span>
-                      <span class="purpose-list__label">Похудение</span>
-                    </label>
-                  </li>
-                  <li class="purpose-list__item">
-                    <label class="purpose-list__control">
-                      <input class="visually-hidden" type="radio" name="purpose-group" value="weight gain">
-                      <span class="purpose-list__mark"></span>
-                      <span class="purpose-list__label">Набор массы</span>
-                    </label>
-                  </li>
-                  <li class="purpose-list__item">
-                    <label class="purpose-list__control">
-                      <input class="visually-hidden" type="radio" name="purpose-group" value="need advice">
-                      <span class="purpose-list__mark"></span>
-                      <span class="purpose-list__label">Не знаю (Нужен ваш совет)</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+          <div class="select-form__wrapper select-form__wrapper--border select-form__wrapper--purpose">
+            <fieldset class="select-form__fieldset select-form__fieldset--purpose">
+              <legend class="visually-hidden">Цель программы</legend>
+              <ul class="select-form__list purpose-list">
+                <li class="purpose-list__item">
+                  <label class="purpose-list__control">
+                    <input class="visually-hidden" type="radio" name="purpose-group" value="slimming" checked>
+                    <span class="purpose-list__mark"></span>
+                    <span class="purpose-list__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="purpose-list__item">
+                  <label class="purpose-list__control">
+                    <input class="visually-hidden" type="radio" name="purpose-group" value="weight gain">
+                    <span class="purpose-list__mark"></span>
+                    <span class="purpose-list__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="purpose-list__item">
+                  <label class="purpose-list__control">
+                    <input class="visually-hidden" type="radio" name="purpose-group" value="need advice">
+                    <span class="purpose-list__mark"></span>
+                    <span class="purpose-list__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
         </div>
-        <div class="select-form__wrapper">
+        <div class="select-form__wrapper select-form__wrapper--contacts">
           <fieldset class="select-form__fieldset select-form__fieldset--contacts">
             <legend class="select-form__title select-form__title--contacts">Контактные данные (владельца кота)</legend>
             <p class="select-form__data select-form__data--mail">
@@ -127,7 +123,7 @@
             </p>
           </fieldset>
         </div>
-        <div class="select-form__wrapper">
+        <div class="select-form__wrapper select-form__wrapper--comment">
           <fieldset class="select-form__fieldset select-form__fieldset--comment">
             <legend class="select-form__title">Комментарий</legend>
             <textarea class="select-form__comment-textarea" name="comment-field" id="comment-field"

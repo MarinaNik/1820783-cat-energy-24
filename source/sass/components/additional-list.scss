@@ -1,5 +1,6 @@
 .additional-list {
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
   list-style-type: none;
   color: $black;
@@ -10,12 +11,14 @@
     align-items: center;
     column-gap: 57px;
     row-gap: 27px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1196px;
     grid-template-columns: repeat(4, 1fr);
     gap: 57px;
+    margin-bottom: 61px;
   }
 }
 

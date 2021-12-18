@@ -23,26 +23,55 @@
   }
 }
 
-.select-form__border {
-  border-bottom: 1px solid $gray-217;
-
-  @media (min-width: $tablet-width) {
-    border-bottom: none;
-  }
-}
-
 .select-form__wrapper {
   min-width: 280px;
-  margin: 0 auto;
   padding: 24px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 67px;
-    padding-left: 71px;
+    padding-right: 37px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+  }
+
+  &--border {
+    border-bottom: 1px solid $gray-217;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+
+  &--purpose {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--comment {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--add {
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 71px;
+    }
   }
 }
 
@@ -60,41 +89,21 @@
 
   &--purpose {
     @media (min-width: $tablet-width) {
-      margin-bottom: 74px;
       padding-top: 28px;
       padding-bottom: 29px;
       border: 1px solid $gray-217;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
       padding: 25px 28px;
     }
   }
 
   &--contacts {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
-    }
-
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 78px;
-    }
-  }
-
-  &--comment {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
-    }
-  }
-
-  &--add {
-    margin-bottom: 40px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 71px;
     }
   }
 }

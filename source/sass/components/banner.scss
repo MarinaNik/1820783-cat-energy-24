@@ -2,7 +2,7 @@
   padding-top: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,16 +17,18 @@
   padding-top: 188px;
   padding-bottom: 43px;
   min-height: 290px;
-  background-color: #68b738;
+  background-color: $green;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: right;
     width: 100%;
-    padding-left: 422px;
     padding-top: 71px;
+    padding-right: 124px;
     padding-bottom: 69px;
     min-height: 200px;
     background-position: 50% 60%;
