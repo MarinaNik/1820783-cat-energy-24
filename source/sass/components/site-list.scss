@@ -21,7 +21,12 @@
     width: 480px;
     font-size: 20px;
     line-height: 30px;
-    color: $white;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }
 

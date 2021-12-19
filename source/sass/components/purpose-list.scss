@@ -4,3 +4,21 @@
   list-style-type: none;
   color: $gray-34;
 }
+
+.purpose-list__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.purpose-list__control {
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+  }
+}

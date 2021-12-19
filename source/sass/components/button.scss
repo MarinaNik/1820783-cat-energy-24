@@ -14,20 +14,31 @@
   background-color: $green;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 29px;
+  }
+
   &--promo {
     font-size: 14px;
     line-height: 18px;
     padding: 9px 72px;
+  }
 
+  &--catalog {
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-      padding: 17px 29px;
+      font-size: 16px;
+      padding: 10px;
     }
   }
 
   &--secondary {
     color: $gray-68;
     background-color: $gray-242;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
   }
 }

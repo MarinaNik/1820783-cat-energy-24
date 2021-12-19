@@ -1,5 +1,12 @@
-.page-footer {
-  position: relative;
+.page-footer__contacts {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1330px;
+  }
+}
+
+.page-footer--inner {
+  background-color: #f2f2f2;
 }
 
 .page-footer__logo {

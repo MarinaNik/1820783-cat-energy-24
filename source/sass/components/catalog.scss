@@ -2,4 +2,36 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 63px;
+    align-items: stretch;
+    justify-items: stretch;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-bottom: 48px;
+  }
+}
+
+.catalog__item {
+  border-bottom: 1px solid $gray-235;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  &:first-child {
+    border-top: 1px solid $gray-235;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
 }
