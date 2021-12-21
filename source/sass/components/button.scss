@@ -15,21 +15,40 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
     padding: 17px 29px;
+
+    &:hover {
+      background-color: $gray-94;
+    }
+
+    &:active {
+      background-color: $gray-94;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--promo {
     font-size: 14px;
     line-height: 18px;
-    padding: 9px 72px;
+    padding: 11px 72px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 17px 27px;
+    }
   }
 
   &--catalog {
     @media (min-width: $tablet-width) {
-      font-size: 16px;
       padding: 10px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 
@@ -37,8 +56,16 @@
     color: $gray-68;
     background-color: $gray-242;
 
-    @media (min-width: $tablet-width) {
-      font-size: 16px;
+    &:hover {
+      @media (min-width: $tablet-width) {
+        background-color: $gray-230;
+      }
+    }
+
+    &:active {
+      @media (min-width: $tablet-width) {
+        color: rgba(68, 68, 68, 0.3);
+      }
     }
   }
 }

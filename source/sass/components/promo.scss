@@ -38,20 +38,22 @@
     min-width: 621px;
     min-height: 810px;
     padding-right: 30px;
-    padding-left: 117px;
+    padding-left: 118px;
     padding-top: 39px;
     background-image: url("../img/index/promo-image-tablet.png");
-    background-position: 5% 100%;
+    background-position: 50% 100%;
     background-size: 709px 609px;
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     margin: 0 auto;
-    min-width: 1220px;
+    min-width: 1140px;
     max-width: 1330px;
     min-height: 472px;
     padding: 0;
-    padding-left: 110px;
+    padding-right: 55px;
+    padding-left: 135px;
     padding-top: 83px;
     background-image: url("../img/index/promo-image-desktop.png");
     background-size: 552px 499px;
@@ -83,7 +85,7 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 303px;
+  margin-bottom: 302px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
