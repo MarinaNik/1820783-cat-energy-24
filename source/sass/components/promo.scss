@@ -1,18 +1,19 @@
 .promo {
-  color: $white;
   position: relative;
+  color: $white;
   min-width: 320px;
-  background: linear-gradient(to bottom, $green 100%, transparent 100%);
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background.jpg");
-  background-size: 100% 63%, 100% 63%;
+  height: 479px;
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background.jpg"), linear-gradient(to right, rgb(66, 66, 70) 50%, rgb(67, 66, 71) 50%);
   background-repeat: no-repeat;
+  background-size: 100% 63%, 320px 302px, 100% 63%;
+  background-position: 0 0, top center, 0 0;
 
   @media (min-width: $tablet-width) {
     color: $black;
     min-width: 768px;
     background: none;
     background-image: none;
-    min-height: 825px;
+    min-height: 848px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +33,7 @@
   background-image: url("../img/index/promo-image.png");
   background-repeat: no-repeat;
   background-position: 50% 80%;
+  background-size: 280px 270px;
 
   @media (min-width: $tablet-width) {
     align-items: start;
@@ -58,7 +60,7 @@
     background-image: url("../img/index/promo-image-desktop.png");
     background-size: 552px 499px;
     background-repeat: no-repeat;
-    background-position: 63% 0;
+    background-position: 64% 0;
   }
 }
 
