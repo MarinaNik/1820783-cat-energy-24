@@ -31,10 +31,9 @@
 
 .page__body--index {
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, $green 50%, transparent 50%);
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop.jpg"), linear-gradient(to top, rgb(67, 66, 71) 100%, rgb(67, 66, 71) 100%);
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50% 53vw, 50% 53vw;
+    background-size: 50% 696px, 50% 696px, 50% 696px;
   }
 }

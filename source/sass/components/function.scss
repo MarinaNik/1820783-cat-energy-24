@@ -3,7 +3,7 @@
   margin: 0;
   padding: 20px;
   padding-top: 0;
-  padding-bottom: 52px;
+  padding-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     min-width: 633px;
@@ -14,10 +14,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     margin: 0 auto;
     min-width: 1220px;
     max-width: 1330px;
-    padding-top: 51px;
+    padding-top: 55px;
     padding-right: 55px;
     padding-left: 55px;
     padding-bottom: 20px;
@@ -28,7 +29,7 @@
   counter-reset: section;
   margin: 0;
   padding: 0;
-  padding-left: 78px;
+  padding-left: 80px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -36,21 +37,68 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
     justify-items: stretch;
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 131px;
+    row-gap: 38px;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 94px;
+    gap: 76px;
   }
 }
 
 .function__item {
+  min-height: 60px;
+  position: relative;
   font-family: $font-secondary;
   color: $gray-68;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      top: 41px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--good::before {
+    background-image: url("../img/index/function-good.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
+
+  &--cooking::before {
+    background-image: url("../img/index/function-cooking.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
+
+  &--change::before {
+    background-image: url("../img/index/function-change.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
+
+  &--enjoy::before {
+    background-image: url("../img/index/function-enjoy.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -62,7 +110,7 @@
       line-height: 280px;
       color: $gray-242;
       top: 0;
-      right: 3px;
+      right: 4px;
       z-index: -1;
     }
   }
@@ -74,22 +122,16 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
 
-  &--cooking::after {
+  &--good::after {
     @media (min-width: $tablet-width) {
-      right: -14px;
-    }
-  }
-
-  &--change::after {
-    @media (min-width: $tablet-width) {
-      right: -18px;
+      right: 22px;
     }
   }
 }
@@ -100,7 +142,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

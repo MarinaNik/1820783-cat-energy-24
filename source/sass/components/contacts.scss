@@ -10,15 +10,15 @@
   @media (min-width: $tablet-width) {
     min-width: 628px;
     margin: 0 auto;
-    padding: 61px 70px;
+    padding: 59px 70px;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     position: absolute;
-    top: 48px;
-    left: 55px;
-    min-width: 565px;
+    top: 104px;
+    left: 0;
+    width: 565px;
     padding: 56px 80px;
     background-color: $white;
     z-index: 1;
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    margin-bottom: 20px;
+    justify-content: space-between;
     font-size: 16px;
     text-align: right;
   }
@@ -61,8 +61,11 @@
 
 .contacts__address-street {
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__address-city {

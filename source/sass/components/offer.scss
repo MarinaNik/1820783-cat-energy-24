@@ -1,7 +1,7 @@
 .offer__wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding: 21px 20px;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
@@ -11,6 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     margin: 0 auto;
     min-width: 1220px;
     max-width: 1330px;
@@ -34,9 +35,9 @@
 }
 
 .offer__item {
-  padding: 21px;
+  position: relative;
+  padding: 21px 20px;
   padding-top: 30px;
-  padding-bottom: 21px;
   background-color: $gray-242;
 
   &:first-child {
@@ -53,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
-    padding-bottom: 57px;
+    padding-bottom: 51px;
     padding-left: 53px;
     padding-right: 62px;
   }
@@ -63,27 +64,113 @@
     padding-right: 52px;
     margin-bottom: 0;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 90px;
+      left: 58vw;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 29px;
+    width: 36px;
+    height: 50px;
+
+    @media (min-width: $tablet-width) {
+      top: 80px;
+      left: 62vw;
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 42px;
+      left: 63px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  &--slim::after {
+    background-image: url("../img/index/offer-slim.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/index/offer-slim_tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/index/offer-slim_desktop.svg");
+    }
+  }
+
+  &--pro::after {
+    top: 36px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/index/offer-pro.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 134px;
+      left: 53.5vw;
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/index/offer-pro_tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 66px;
+      left: 32px;
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/index/offer-pro_desktop.svg");
+    }
+  }
 }
 
 .offer__title {
   margin: 0;
   padding: 0;
+  padding-left: 70px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
-    text-align: left;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 106px;
+    padding-left: 159px;
     margin-bottom: 73px;
   }
 }
@@ -96,19 +183,19 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
-    margin-bottom: 53px;
+    width: 44.5vw;
+    margin-bottom: 48px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 21px;
   }
 }
 
 .offer__item-wrapper {
-  padding-top: 17px;
+  padding-top: 19px;
   border-top: 1px solid $gray-230;
 
   @media (min-width: $tablet-width) {
@@ -118,6 +205,8 @@
 }
 
 .offer__link {
+  position: relative;
+  display: block;
   font-size: 16px;
   line-height: 16px;
   color: inherit;
@@ -129,5 +218,30 @@
     padding-bottom: 5px;
     font-size: 20px;
     line-height: 30px;
+
+    &:active,
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    top: 2px;
+    left: 100px;
+    background-image: url("../img/index/offer-arrow.svg");
+
+    @media (min-width: $tablet-width) {
+      transform: translateY(91%) translateX(126%);
+    }
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../img/index/offer-arrow_long.svg");
+    transition: 0.2s ease;
   }
 }
