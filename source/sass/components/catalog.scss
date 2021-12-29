@@ -6,17 +6,17 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    row-gap: 63px;
+    gap: 60px;
     align-items: stretch;
     justify-items: stretch;
-    margin-bottom: 38px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-    margin-bottom: 48px;
+    column-gap: 80px;
+    row-gap: 63px;
+    margin-bottom: 52px;
   }
 }
 

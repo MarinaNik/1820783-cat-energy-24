@@ -47,6 +47,7 @@
 .additional-card__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
   font-family: $font-secondary;
   line-height: 14px;
@@ -54,7 +55,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: end;
-    margin-bottom: 24px;
+    padding-top: 5px;
+    margin-bottom: 20px;
     grid-row: 1/2;
     font-size: 16px;
     line-height: 20px;

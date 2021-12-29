@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    padding-top: 3px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -73,7 +74,7 @@
         text-decoration-style: solid;
         text-decoration-color: $green;
         text-decoration-thickness: 2px;
-        text-underline-offset: 12px;
+        text-underline-offset: 10px;
       }
     }
   }
