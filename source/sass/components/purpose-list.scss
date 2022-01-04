@@ -60,6 +60,12 @@
     }
   }
 
+  &:focus ~ span {
+    outline: 2px solid $black;
+    border-radius: 10px;
+    border: transparent;
+  }
+
   &:disabled + .purpose-list__mark {
     opacity: 0.3;
   }
@@ -89,4 +95,8 @@
   @media (min-width: $desktop-width) {
     left: -2px;
   }
+}
+
+.purpose-list__label {
+  padding: 5px;
 }

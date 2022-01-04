@@ -359,32 +359,21 @@
     }
   }
 
-  &:hover::before {
+  &:hover {
     @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      top: -26px;
-      left: 161px;
-      width: 34px;
-      height: 34px;
-      background: $white;
-      border: 1px solid $gray-205;
-      border-radius: 50%;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
     }
   }
 
-  &:active::before {
+  &:focus-visible {
     @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      top: -26px;
-      left: 161px;
-      width: 34px;
-      height: 34px;
-      background: $white;
+      outline: 2px solid $black;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
       border: 1px solid $green;
-      border-radius: 50%;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     }
   }
@@ -404,7 +393,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 5px;
     font-size: 20px;
     line-height: 30px;
     text-decoration-line: underline;
@@ -417,6 +406,13 @@
   &:hover {
     @media (min-width: $tablet-width) {
       text-decoration-style: solid;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $tablet-width) {
+      outline: 2px solid $black;
+      border-radius: 5px;
     }
   }
 

@@ -37,6 +37,10 @@
     fill: $green;
   }
 
+  &:focus {
+    outline: 2px solid $black;
+  }
+
   &:active .copyright__icon-logo {
     opacity: 0.3;
   }

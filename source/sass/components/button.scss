@@ -23,9 +23,15 @@
       background-color: $green-dark;
     }
 
+    &:focus {
+      outline: 2px solid $black;
+      outline-offset: initial;
+    }
+
     &:active {
       background-color: $green-dark;
       color: rgba(255, 255, 255, 0.3);
+      outline: none;
     }
   }
 
