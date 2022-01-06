@@ -7,6 +7,8 @@
 }
 
 .more-info__wrapper {
+  box-sizing: border-box;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,14 +20,44 @@
 
   @media (min-width: $tablet-width) {
     min-width: 248px;
-    margin-top: 45px;
+    margin-top: 82px;
     padding: 38px;
-    padding-top: 161px;
+    padding-top: 159px;
+    padding-bottom: 36px;
     border: 2px solid $gray-242;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 169px;
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 45%;
+    width: 30px;
+    height: 2px;
+    background-color: $gray-211;
+
+    @media (min-width: $tablet-width) {
+      top: 80px;
+      left: 40%;
+      width: 60px;
+      height: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 79px;
+      left: 38%;
+    }
+  }
+
+  &::before {
+    transform: rotate(90deg);
   }
 }
 

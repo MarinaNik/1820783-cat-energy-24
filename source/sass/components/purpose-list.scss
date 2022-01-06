@@ -1,17 +1,27 @@
 .purpose-list {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   list-style-type: none;
   color: $gray-34;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .purpose-list__item {
   &:not(:last-child) {
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
   }
 }
 
 .purpose-list__control {
+  position: relative;
   padding-left: 45px;
 
   @media (min-width: $tablet-width) {
@@ -21,4 +31,72 @@
   @media (min-width: $desktop-width) {
     padding-left: 59px;
   }
+
+  &:hover .purpose-list__mark {
+    border-color: $gray-186;
+  }
+}
+
+.purpose-list__input {
+  &[type="radio"] + .purpose-list__mark {
+    border-radius: 50%;
+  }
+
+  &[type="radio"]:checked + .purpose-list__mark::before {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    background-color: $green;
+    border-radius: 50%;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &:focus ~ span {
+    outline: 2px solid $black;
+    border-radius: 10px;
+    border: transparent;
+  }
+
+  &:disabled + .purpose-list__mark {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .purpose-list__label {
+    opacity: 0.3;
+  }
+}
+
+.purpose-list__mark {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -3px;
+  left: 0;
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid $gray-205;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+    left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -2px;
+  }
+}
+
+.purpose-list__label {
+  padding: 5px;
 }

@@ -9,11 +9,12 @@
 }
 
 .logo__image {
-  width: 34px;
+  width: 192px;
   height: 38px;
   margin-right: 55px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 174px;
     height: 52px;
     margin-right: 0;

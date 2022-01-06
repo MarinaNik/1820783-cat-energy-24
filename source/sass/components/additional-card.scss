@@ -45,16 +45,19 @@
 }
 
 .additional-card__info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto min-content;
+  justify-items: start;
   margin-bottom: 15px;
   font-family: $font-secondary;
   line-height: 14px;
   color: $gray-68;
 
   @media (min-width: $tablet-width) {
+    gap: 50px;
     justify-content: end;
-    margin-bottom: 24px;
+    padding-top: 5px;
+    margin-bottom: 20px;
     grid-row: 1/2;
     font-size: 16px;
     line-height: 20px;
@@ -69,8 +72,11 @@
 }
 
 .additional-card__price {
-  @media (min-width: $tablet-width) {
-    margin-left: 49px;
+  @media (min-width: $desktop-width) {
+    min-width: 46px;
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    justify-items: start;
   }
 }
 

@@ -15,22 +15,30 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 29px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 29px;
 
     &:hover {
-      background-color: $gray-94;
+      background-color: $green-dark;
+    }
+
+    &:focus {
+      outline: 2px solid $black;
+      outline-offset: initial;
     }
 
     &:active {
-      background-color: $gray-94;
+      background-color: $green-dark;
       color: rgba(255, 255, 255, 0.3);
+      outline: none;
     }
   }
 
   &--promo {
     font-size: 14px;
     line-height: 18px;
-    padding: 11px 72px;
+    padding: 9px 72px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -41,20 +49,19 @@
 
   &--catalog {
     @media (min-width: $tablet-width) {
+      font-size: 16px;
       padding: 10px;
-    }
-  }
-
-  &--form {
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
     }
   }
 
   &--secondary {
     color: $gray-68;
     background-color: $gray-242;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      padding: 10px 29px;
+    }
 
     &:hover {
       @media (min-width: $tablet-width) {

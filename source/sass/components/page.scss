@@ -36,4 +36,9 @@
     background-repeat: no-repeat;
     background-size: 50% 696px, 50% 696px, 50% 696px;
   }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop_2x.jpg"), linear-gradient(to top, rgb(67, 66, 71) 100%, rgb(67, 66, 71) 100%);
+    background-size: 50% 696px, 50% 696px, 50% 696px;
+  }
 }
