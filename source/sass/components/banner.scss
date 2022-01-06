@@ -44,6 +44,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner_2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: right;
@@ -52,7 +56,12 @@
     padding-right: 124px;
     padding-bottom: 69px;
     min-height: 200px;
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner_tablet.jpg");
     background-position: 50% 60%;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner_tablet_2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +70,12 @@
     padding-top: 185px;
     padding-bottom: 42px;
     height: 100%;
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner_desktop.jpg");
     background-position: center;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/add-banner_desktop_2x.jpg");
   }
 }
 

@@ -249,30 +249,24 @@
 }
 
 .example__item {
-  &--view-after {
+  &--cat-after {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
     width: 296px;
 
-    &--view-after {
+    &--cat-after {
       display: block;
     }
   }
 }
 
-.example__image-cat-mobile {
+.example__item img {
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.example__image-cat-tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+    display: inline-block;
+    width: 520px;
+    height: 511px;
   }
 }
 
