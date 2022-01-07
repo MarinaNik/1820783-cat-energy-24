@@ -65,11 +65,11 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     margin: 0 auto;
-    min-width: 1140px;
+    min-width: 450px;
     max-width: 1330px;
     min-height: 472px;
     padding: 0;
-    padding-right: 55px;
+    padding-right: 745px;
     padding-left: 135px;
     padding-top: 83px;
     background-image: url("../img/index/promo-image-desktop.png");
@@ -109,7 +109,7 @@
   margin-bottom: 302px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;

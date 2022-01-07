@@ -41,7 +41,7 @@
   background-color: $gray-242;
 
   &:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
@@ -62,68 +62,69 @@
   @media (min-width: $desktop-width) {
     padding-left: 52px;
     padding-right: 52px;
+    padding-bottom: 53px;
     margin-bottom: 0;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 14px;
-    left: 12px;
-    width: 100px;
-    height: 100px;
-    background-size: 50% 51%;
-    background-position: 20% 15%, 20% 20%;
-    background-repeat: no-repeat;
+  //&::before {
+  //  position: absolute;
+  //  content: "";
+  //  top: 14px;
+  //  left: 12px;
+  //  width: 100px;
+  //  height: 100px;
+  //  background-size: 50% 51%;
+  //  background-position: 20% 15%, 20% 20%;
+  //  background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
-      top: 29px;
-      left: 50vw;
-      width: 340px;
-      height: 340px;
-      background-size: 60% 57%, 60% 60%;
-      background-position: 44% 37%, 44% 45%;
-    }
+  //  @media (min-width: $tablet-width) {
+  //    top: 29px;
+  //    left: 50vw;
+  //    width: 340px;
+  //    height: 340px;
+  //    background-size: 60% 57%, 60% 60%;
+  //    background-position: 44% 37%, 44% 45%;
+  //  }
 
-    @media (min-width: $desktop-width) {
-      top: 3px;
-      left: 8px;
-      width: 200px;
-      height: 200px;
-      background-size: 50% 49%, 50% 51%;
-      background-position: 44% 37%, 44% 45%;
-    }
-  }
+  //  @media (min-width: $desktop-width) {
+  //    top: 3px;
+  //    left: 8px;
+  //    width: 200px;
+  //    height: 200px;
+  //    background-size: 50% 49%, 50% 51%;
+  //    background-position: 44% 37%, 44% 45%;
+  //  }
+  //}
 
-  &--slim::before {
-    background-image: url("../img/index/offer-slim.svg"), radial-gradient($green 25px, transparent 25px);
+  //&--slim::before {
+  //  background-image: url("../img/index/offer-slim.svg"), radial-gradient($green 25px, transparent 25px);
 
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/index/offer-slim_tablet.svg"), radial-gradient($green 100px, transparent 100px);
-    }
+  //  @media (min-width: $tablet-width) {
+  //    background-image: url("../img/index/offer-slim_tablet.svg"), radial-gradient($green 100px, transparent 100px);
+  //  }
 
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/index/offer-slim_desktop.svg"), radial-gradient($green 50px, transparent 50px);
-    }
-  }
+  //  @media (min-width: $desktop-width) {
+  //    background-image: url("../img/index/offer-slim_desktop.svg"), radial-gradient($green 50px, transparent 50px);
+  //  }
+  //}
 
-  &--pro::before {
-    background-size: 67% 68%;
-    background-position: 4% 2%, 7% 4%;
-    background-image: url("../img/index/offer-pro.svg"), radial-gradient($green 25px, transparent 25px);
+  //&--pro::before {
+  //  background-size: 67% 68%;
+  //  background-position: 4% 2%, 7% 4%;
+  //  background-image: url("../img/index/offer-pro.svg"), radial-gradient($green 25px, transparent 25px);
 
-    @media (min-width: $tablet-width) {
-      background-size: 79% 82%, 60% 60%;
-      background-position: 39% 41%, 46% 45%;
-      background-image: url("../img/index/offer-pro_tablet.svg"), radial-gradient($green 100px, transparent 100px);
-    }
+  //  @media (min-width: $tablet-width) {
+  //    background-size: 79% 82%, 60% 60%;
+  //    background-position: 39% 41%, 46% 45%;
+  //    background-image: url("../img/index/offer-pro_tablet.svg"), radial-gradient($green 100px, transparent 100px);
+  //  }
 
-    @media (min-width: $desktop-width) {
-      background-size: 67% 78%, 50% 50%;
-      background-position: 38% 31%, 44% 44%;
-      background-image: url("../img/index/offer-pro_desktop.svg"), radial-gradient($green 50px, transparent 50px);
-    }
-  }
+  //  @media (min-width: $desktop-width) {
+  //    background-size: 67% 78%, 50% 50%;
+  //    background-position: 38% 31%, 44% 44%;
+  //    background-image: url("../img/index/offer-pro_desktop.svg"), radial-gradient($green 50px, transparent 50px);
+  //  }
+  //}
 }
 
 .offer__title {
@@ -139,13 +140,76 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 159px;
-    margin-bottom: 73px;
+    padding-left: 161px;
+    margin-bottom: 75px;
+  }
+}
+
+.offer__image {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    left: 58vw;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 51px;
+    right: 0;
+  }
+
+  &--pro {
+    top: 24px;
+    left: 13px;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      left: 53.5vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 48px;
+      left: 33px;
+    }
+  }
+}
+
+.offer__icon-slim--mobile,
+.offer__icon-pro--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.offer__icon-slim--tablet,
+.offer__icon-pro--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.offer__icon-slim--desktop,
+.offer__icon-pro--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -154,11 +218,11 @@
   padding: 0;
   font-family: $font-secondary;
   color: $gray-68;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 44.5vw;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
     text-align: left;
   }
 
