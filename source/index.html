@@ -231,7 +231,7 @@
             <picture>
               <source media="(min-width: 1330px)" srcset="img/logo/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-              <img class="logo__image" src="img/logo/logo.svg" width="191" height="38" alt="Логотип сайта.">
+              <img class="logo__image" src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип сайта.">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
@@ -513,23 +513,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
