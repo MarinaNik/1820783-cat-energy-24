@@ -18,7 +18,7 @@
     min-width: 768px;
     background: none;
     background-image: none;
-    min-height: 848px;
+    min-height: 850px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,9 +47,9 @@
 
   @media (min-width: $tablet-width) {
     align-items: start;
-    min-width: 621px;
+    min-width: 521px;
     min-height: 810px;
-    padding-right: 30px;
+    padding-right: 130px;
     padding-left: 118px;
     padding-top: 39px;
     background-image: url("../img/index/promo-image-tablet.png");

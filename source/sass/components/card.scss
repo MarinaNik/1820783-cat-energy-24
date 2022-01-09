@@ -94,15 +94,29 @@
   &--small {
     width: 68px;
     height: 86px;
+    margin-bottom: 8px;
 
     @media (min-width: $tablet-width) {
       width: 161px;
       height: 172px;
       margin-top: 20px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 25px;
+    }
+  }
+
+  &--very-small {
+    width: 68px;
+    height: 78px;
+    margin-top: 8px;
+
+    @media (min-width: $tablet-width) {
+      width: 161px;
+      height: 172px;
+      margin-top: 20px;
     }
   }
 }
