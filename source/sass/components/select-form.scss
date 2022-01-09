@@ -255,6 +255,7 @@
 }
 
 .select-form__data {
+  position: relative;
   margin: 0;
   min-width: 280px;
   display: flex;
@@ -267,47 +268,9 @@
     }
   }
 
-  &--mail {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 20px;
-      height: 14px;
-      right: 15px;
-      bottom: 15px;
-      background-image: url("../img/form/icon_email.svg");
-
-      @media (min-width: $tablet-width) {
-        right: 16px;
-        bottom: 21px;
-      }
-    }
-
-    &:not(:last-child) {
-      @media (min-width: $desktop-width) {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &--phone {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 20px;
-      height: 20px;
-      right: 13px;
-      bottom: 12px;
-      background-image: url("../img/form/icon_phone.svg");
-
-      @media (min-width: $tablet-width) {
-        right: 16px;
-        bottom: 18px;
-      }
+  &.select-form__data--mail {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 }
@@ -369,8 +332,63 @@
     outline: none;
   }
 
+  &:focus + span .select-form__icon--mail {
+    stroke: $green;
+  }
+
+  &:focus + span .select-form__icon--phone {
+    fill: $green;
+  }
+
+  /*Класс для отражения ошибки ввода данных*/
+
   &--error {
-    outline: 2px solid rgba(255, 130, 130, 1);
+    outline: 2px solid $red;
+  }
+
+  &--error + span .select-form__icon--mail {
+    stroke: $red;
+  }
+
+  &--error + span .select-form__icon--phone {
+    fill: $red;
+  }
+}
+
+.select-form__image {
+  position: absolute;
+  right: 15px;
+  bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+    bottom: 13px;
+  }
+
+  &--phone {
+    right: 13px;
+    bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+      right: 16px;
+      bottom: 9px;
+    }
+  }
+}
+
+.select-form__icon--mail {
+  stroke: #222222;
+
+  &:focus {
+    stroke: $green;
+  }
+}
+
+.select-form__icon--phone {
+  fill: #000000;
+
+  &:focus {
+    fill: $green;
   }
 }
 

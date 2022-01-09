@@ -2,8 +2,16 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import rename from 'gulp-rename';
+import csso from 'postcss-csso';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
 
 // Styles
 
@@ -17,6 +25,14 @@ export const styles = () => {
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+//HTML
+
+//export const html = () => {
+//  return gulp.src('source/*.html')
+//  .pipe(htmlmin({ collapseWhitespace: true }))
+//  .pipe(gulp.dest('source'));
+//}
 
 // Server
 
