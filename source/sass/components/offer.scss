@@ -184,15 +184,13 @@
   }
 }
 
-.offer__icon-slim--mobile,
-.offer__icon-pro--mobile {
+.offer__image-icon--mobile {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.offer__icon-slim--tablet,
-.offer__icon-pro--tablet {
+.offer__image-icon--tablet {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -204,8 +202,7 @@
   }
 }
 
-.offer__icon-slim--desktop,
-.offer__icon-pro--desktop {
+.offer__image-icon--desktop {
   display: none;
 
   @media (min-width: $desktop-width) {
