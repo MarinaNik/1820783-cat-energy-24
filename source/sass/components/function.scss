@@ -55,50 +55,50 @@
   font-family: $font-secondary;
   color: $gray-68;
 
-  //&::before {
-  //  position: absolute;
-  //  content: "";
-  //  top: -2px;
-  //  left: -80px;
-  //  width: 60px;
-  //  height: 60px;
-  //  background-color: $green;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
 
-  //  @media (min-width: $tablet-width) {
-  //    top: 41px;
-  //    left: 0;
-  //    width: 80px;
-  //    height: 80px;
-  //  }
-  //}
+    @media (min-width: $tablet-width) {
+      top: 41px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
 
-  //&--good::before {
-  //  background-image: url("../img/index/function-good.svg");
-  //  background-repeat: no-repeat;
-  //  background-size: 30px 32px;
-  //  background-position: 50% 50%;
-  //}
+  &--good::before {
+    background-image: url("../img/index/function-good.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
 
-  //&--cooking::before {
-  //  background-image: url("../img/index/function-cooking.svg");
-  //  background-repeat: no-repeat;
-  //  background-size: 30px 32px;
-  //  background-position: 50% 50%;
-  //}
+  &--cooking::before {
+    background-image: url("../img/index/function-cooking.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
 
-  //&--change::before {
-  //  background-image: url("../img/index/function-change.svg");
-  //  background-repeat: no-repeat;
-  //  background-size: 30px 32px;
-  //  background-position: 50% 50%;
-  //}
+  &--change::before {
+    background-image: url("../img/index/function-change.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
 
-  //&--enjoy::before {
-  //  background-image: url("../img/index/function-enjoy.svg");
-  //  background-repeat: no-repeat;
-  //  background-size: 30px 32px;
-  //  background-position: 50% 50%;
-  //}
+  &--enjoy::before {
+    background-image: url("../img/index/function-enjoy.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: 50% 50%;
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
