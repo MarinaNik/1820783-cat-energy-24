@@ -16,9 +16,9 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     position: absolute;
-    top: 104px;
+    top: 100px;
     left: 0;
-    width: 565px;
+    min-width: 565px;
     padding: 56px 80px;
     background-color: $white;
     z-index: 1;
