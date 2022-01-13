@@ -25,12 +25,11 @@
 
 .select-form__wrapper {
   min-width: 280px;
-  padding: 24px 20px;
-  padding-bottom: 24px;
+  padding: 23px 20px;
 
   @media (min-width: $tablet-width) {
     padding-right: 37px;
-    padding-left: 41px;
+    padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +46,7 @@
 
   &--cat {
     @media (min-width: $tablet-width) {
-      margin-bottom: 22px;
+      margin-bottom: 26px;
     }
 
     @media (min-width: $desktop-width) {
@@ -69,7 +68,7 @@
     padding-top: 26px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 41px;
+      margin-bottom: 43px;
     }
 
     @media (min-width: $desktop-width) {
@@ -92,13 +91,14 @@
 
   &--add {
     padding-top: 0;
+    padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 3px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 81px;
+      margin-bottom: 57px;
     }
   }
 }
@@ -368,6 +368,11 @@
   &--phone {
     right: 13px;
     bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      right: 16px;
+      bottom: 9px;
+    }
 
     @media (min-width: $desktop-width) {
       right: 16px;
