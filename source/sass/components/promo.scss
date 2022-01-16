@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    align-items: start;
+    align-items: flex-start;
     min-width: 521px;
     min-height: 810px;
     padding-right: 130px;

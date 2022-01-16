@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 37px;
-    padding-left: 39px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +81,7 @@
     padding-bottom: 20px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 39px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $desktop-width) {
@@ -139,8 +139,9 @@
 .select-form__title {
   display: inline-block;
   position: relative;
+  max-width: 181px;
   padding: 0;
-  padding-right: 23px;
+  padding-right: 21px;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
@@ -149,13 +150,10 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
-
-    br {
-      display: none;
-    }
   }
 
   &::before,
@@ -277,22 +275,23 @@
 
 .select-form__label {
   align-self: center;
-  margin-right: 13px;
+  white-space: nowrap;
+  margin-right: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 18px;
+    margin-right: 19px;
   }
 
   &--mail {
-    margin-right: 11px;
+    margin-right: 10px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 19px;
+      margin-right: 21px;
     }
   }
 
   &--phone {
-    margin-right: 11px;
+    margin-right: 10px;
 
     @media (min-width: $tablet-width) {
       margin-right: 14px;
@@ -353,6 +352,11 @@
   &--error + span .select-form__icon--phone {
     fill: $red;
   }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 .select-form__image {
@@ -452,7 +456,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 45px;
   }
