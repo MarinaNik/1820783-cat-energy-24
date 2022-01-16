@@ -213,7 +213,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
