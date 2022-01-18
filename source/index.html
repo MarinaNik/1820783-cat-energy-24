@@ -11,12 +11,15 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body page__body--index">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+      <!-- Для закрытия меню с js класс main-nav--opened заменяется на main-nav--closed -->
+      <nav class="page-header__nav main-nav main-nav--nojs main-nav--opened">
         <div class="main-nav__container">
           <a class="main-nav__logo logo">
             <picture>
@@ -201,7 +204,7 @@
       <div class="page-footer__container">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="index.html" aria-label="Логотип сайта">
-            <svg class="page-footer__logo-title" width="128" height="24" role="img">
+            <svg class="page-footer__logo-title" width="128" height="24" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo_title-footer"></use>
             </svg>
           </a>
@@ -211,8 +214,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg class="social__icon social__icon--vcontakte" aria-hidden="true" focusable="false"
-                  aria-labelledby="heading_vkontakte" width="23" height="13">
-                  <title id="heading_vkontakte">Мы в ВКонтакте</title>
+                  aria-label="Мы во ВКонтакте" width="23" height="13">
                   <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                 </svg>
               </a>
@@ -220,8 +222,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/">
                 <svg class="social__icon social__icon--instagram" aria-hidden="true" focusable="false"
-                  aria-labelledby="heading_instagram" width="16" height="16">
-                  <title id="heading_instagram">Мы в Инстаграм</title>
+                  aria-label="Мы в Инстаграм" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon_instagram"></use>
                 </svg>
               </a>
@@ -229,8 +230,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg class="social__icon social__icon--facebook" aria-hidden="true" focusable="false" width="13"
-                  height="20" aria-labelledby="heading_facebook" fill="none">
-                  <title id="heading_facebook">Мы в Фейсбук</title>
+                  height="20" aria-label="Мы в Фейсбук" fill="none">
                   <use xlink:href="img/sprite.svg#icon_facebook"></use>
                 </svg>
               </a>
@@ -241,7 +241,7 @@
           <span class="copyright__link-name">HTML Academy</span>
           <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon-logo" aria-hidden="true" focusable="false" width="27" height="34"
-              aria-label="Логотип разработчика сайта.">
+              aria-label="Логотип разработчика сайта">
               <use xlink:href="img/sprite.svg#logo_html_footer"></use>
             </svg>
           </a>

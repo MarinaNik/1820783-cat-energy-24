@@ -11,11 +11,14 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
+      <!-- Для открытия меню js класс main-nav--closed заменяется на main-nav--opened -->
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <a class="main-nav__logo logo" href="index.html">
@@ -120,7 +123,7 @@
                 name="contact-mail" placeholder="kuklachev@gmail.com">
               <span class="select-form__image select-form__image--mail">
                 <svg class="select-form__icon select-form__icon--mail" aria-hidden="true" focusable="false" width="20"
-                  height="15" fill="none">
+                  height="15" fill="none" role="img">
                   <use xlink:href="img/sprite.svg#icon_email-form"></use>
                 </svg>
               </span>
@@ -133,7 +136,7 @@
                 name="contact-phone" placeholder="8 (960) 900-60-90">
               <span class="select-form__image select-form__image--phone">
                 <svg class="select-form__icon select-form__icon--phone" aria-hidden="true" focusable="false" width="20"
-                  height="21" fill="none">
+                  height="21" fill="none" role="img">
                   <use xlink:href="img/sprite.svg#icon_phone-form"></use>
                 </svg>
               </span>
@@ -209,8 +212,8 @@
     <div class="page-footer__background">
       <div class="page-footer__container">
         <div class="page-footer__logo">
-          <a class="page-footer__link" href="#" aria-label="Логотип разработчика сайта">
-            <svg class="page-footer__logo-title" width="128" height="24" role="img">
+          <a class="page-footer__link" href="#" aria-label="Логотип сайта">
+            <svg class="page-footer__logo-title" width="128" height="24" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo_title-footer"></use>
             </svg>
           </a>
@@ -220,8 +223,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg class="social__icon social__icon--vcontakte" aria-hidden="true" focusable="false"
-                  aria-labelledby="heading_vkontakte" width="23" height="13">
-                  <title id="heading_vkontakte">Мы в ВКонтакте</title>
+                  aria-label="Мы во ВКонтакте" width="23" height="13">
                   <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                 </svg>
               </a>
@@ -229,8 +231,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/">
                 <svg class="social__icon social__icon--instagram" aria-hidden="true" focusable="false"
-                  aria-labelledby="heading_instagram" width="16" height="16">
-                  <title id="heading_instagram">Мы в Инстаграм</title>
+                  aria-label="Мы в Инстаграм" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon_instagram"></use>
                 </svg>
               </a>
@@ -238,8 +239,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg class="social__icon social__icon--facebook" aria-hidden="true" focusable="false" width="13"
-                  height="20" aria-labelledby="heading_facebook" fill="none">
-                  <title id="heading_facebook">Мы в Фейсбук</title>
+                  height="20" aria-label="Мы в Фейсбук" fill="none">
                   <use xlink:href="img/sprite.svg#icon_facebook"></use>
                 </svg>
               </a>

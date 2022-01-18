@@ -41,12 +41,13 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/script.js')
     .pipe(terser())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
 
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
