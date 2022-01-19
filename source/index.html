@@ -18,8 +18,8 @@
 <body class="page__body page__body--index">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <!-- Для закрытия меню с js класс main-nav--opened заменяется на main-nav--closed -->
-      <nav class="page-header__nav main-nav main-nav--nojs main-nav--opened">
+      <!-- Для открытия меню js класс main-nav--closed заменяется на main-nav--opened -->
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <a class="main-nav__logo logo">
             <picture>
@@ -73,7 +73,12 @@
             <p class="offer__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
               диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <div class="offer__item-wrapper">
-              <a class="offer__link" href="programs.html">Каталог slim</a>
+              <a class="offer__link" href="programs.html">
+                <span class="offer__link-title">Каталог slim</span>
+                <svg class="offer-arrow" aria-hidden="true" focusable="false" role="img" width="24" height="12">
+                  <use xlink:href="img/sprite.svg#offer-arrow_long"></use>
+                </svg>
+              </a>
             </div>
 
           </li>
@@ -90,7 +95,12 @@
             <p class="offer__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <div class="offer__item-wrapper">
-              <a class="offer__link" href="programs.html">Каталог pro</a>
+              <a class="offer__link" href="programs.html">
+                <span class="offer__link-title">Каталог pro</span>
+                <svg class="offer-arrow" aria-hidden="true" focusable="false" role="img" width="24" height="12">
+                  <use xlink:href="img/sprite.svg#offer-arrow_long"></use>
+                </svg>
+              </a>
             </div>
           </li>
         </ul>

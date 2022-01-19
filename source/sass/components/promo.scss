@@ -2,7 +2,7 @@
   position: relative;
   color: $white;
   min-width: 320px;
-  height: 479px;
+  min-height: 480px;
   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background.jpg"), linear-gradient(to right, rgb(66, 66, 70) 50%, rgb(67, 66, 71) 50%);
   background-repeat: no-repeat;
   background-size: 100% 63%, 320px 302px, 100% 63%;
@@ -103,7 +103,7 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 302px;
+  margin-bottom: 303px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
