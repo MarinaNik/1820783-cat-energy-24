@@ -11,11 +11,14 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
+      <!-- Для открытия меню js класс main-nav--closed заменяется на main-nav--opened -->
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <a class="main-nav__logo logo" href="index.html">
@@ -53,10 +56,10 @@
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy PRO 500 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card1-desktop.webp 1x, img/catalog/card1-desktop_2x.webp 2x">
@@ -86,16 +89,16 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy PRO 1000 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card2-desktop.webp 1x, img/catalog/card2-desktop_2x.webp 2x">
@@ -125,16 +128,16 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy PRO 500 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card3-desktop.webp 1x, img/catalog/card3-desktop_2x.webp 2x">
@@ -164,16 +167,16 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy PRO 1000 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card4-desktop.webp 1x, img/catalog/card4-desktop_2x.webp 2x">
@@ -203,16 +206,16 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy slim 500 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card5-desktop.webp 1x, img/catalog/card5-desktop_2x.webp 2x">
@@ -242,16 +245,16 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy slim 1000 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card6-desktop.webp 1x, img/catalog/card6-desktop_2x.webp 2x">
@@ -281,16 +284,16 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <article class="catalog__item card">
             <div class="card__wrapper">
               <div class="card__grid-container">
-                <a class="card__link" href="#">
+                <a class="card__link" href="product.html">
                   <h3 class="card__title">Cat Energy slim 500 г</h3>
                 </a>
-                <a class="card__image-link" href="#">
+                <a class="card__image-link" href="product.html">
                   <picture>
                     <source media="(min-width: 1330px)" type="image/webp"
                       srcset="img/catalog/card7-desktop.webp 1x, img/catalog/card7-desktop_2x.webp 2x">
@@ -320,14 +323,14 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button button--catalog" href="#">Заказать</a>
+              <a class="card__button button button--catalog" href="order.html">Заказать</a>
             </div>
           </article>
           <div class="catalog__item more-info">
             <div class="more-info__wrapper">
               <h3 class="more-info__show">Показать еще 100500 товаров</h3>
               <p class="more-info__text">На самом деле вкусов гораздо больше!</p>
-              <a class="more-info__button button button--secondary" href="#">Показать все</a>
+              <a class="more-info__button button button--secondary" href="new.html">Показать все</a>
             </div>
           </div>
         </div>
@@ -408,8 +411,8 @@
     <div class="page-footer__background">
       <div class="page-footer__container">
         <div class="page-footer__logo">
-          <a class="page-footer__link" href="#" aria-label="Логотип разработчика сайта">
-            <svg class="page-footer__logo-title" width="128" height="24" role="img">
+          <a class="page-footer__link" href="#" aria-label="Логотип сайта">
+            <svg class="page-footer__logo-title" width="128" height="24" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo_title-footer"></use>
             </svg>
           </a>
@@ -419,8 +422,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg class="social__icon social__icon--vcontakte" aria-hidden="true" focusable="false"
-                  aria-labelledby="heading_vkontakte" width="23" height="13">
-                  <title id="heading_vkontakte">Мы в ВКонтакте</title>
+                  aria-label="Мы во ВКонтакте" width="23" height="13">
                   <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                 </svg>
               </a>
@@ -428,8 +430,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/">
                 <svg class="social__icon social__icon--instagram" aria-hidden="true" focusable="false"
-                  aria-labelledby="heading_instagram" width="16" height="16">
-                  <title id="heading_instagram">Мы в Инстаграм</title>
+                  aria-label="Мы в Инстаграм" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon_instagram"></use>
                 </svg>
               </a>
@@ -437,8 +438,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg class="social__icon social__icon--facebook" aria-hidden="true" focusable="false" width="13"
-                  height="20" aria-labelledby="heading_facebook" fill="none">
-                  <title id="heading_facebook">Мы в Фейсбук</title>
+                  height="20" aria-label="Мы в Фейсбук" fill="none">
                   <use xlink:href="img/sprite.svg#icon_facebook"></use>
                 </svg>
               </a>

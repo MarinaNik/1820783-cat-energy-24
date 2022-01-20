@@ -3,6 +3,10 @@
     opacity: 0.8;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:active {
     opacity: 0.6;
   }
