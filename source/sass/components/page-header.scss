@@ -1,5 +1,6 @@
 .page-header__wrapper {
   min-width: 320px;
+  //box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -11,8 +12,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    min-width: 1220px;
-    max-width: 1440px;
+    //min-width: 1220px;
+    max-width: 1220px;
     padding-right: 110px;
     padding-left: 110px;
   }

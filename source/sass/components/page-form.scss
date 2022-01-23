@@ -1,5 +1,8 @@
-.page-form__wrapper {
+.page-form {
   overflow: hidden;
+}
+
+.page-form__wrapper {
   min-width: 320px;
   margin: 0 auto;
   padding-top: 27px;
@@ -14,8 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
-    max-width: 1440px;
+    max-width: 1220px;
     padding-top: 48px;
     padding-left: 110px;
     padding-right: 110px;

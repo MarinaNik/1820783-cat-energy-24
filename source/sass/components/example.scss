@@ -236,15 +236,19 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin-bottom: 15px;
+  width: 280px;
+  height: 232px;
+  margin-bottom: 17px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 592px;
-    margin-bottom: 21px;
+    height: 511px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 19px;
+    margin-bottom: 23px;
     width: 589px;
   }
 }
@@ -256,18 +260,37 @@
 
   @media (min-width: $tablet-width) {
     width: 296px;
+    overflow: hidden;
+
+    &--cat-before {
+      z-index: 200;
+    }
 
     &--cat-after {
       display: block;
+      z-index: 100;
     }
   }
 }
 
-.example__item img {
+.example__image {
   @media (min-width: $tablet-width) {
-    display: inline-block;
-    width: 520px;
+    width: 592px;
     height: 511px;
+    object-fit: cover;
+  }
+
+  &--cat-before {
+    @media (min-width: $tablet-width) {
+      width: 592px;
+      max-width: 592px;
+      object-position: left;
+      height: 500px;
+    }
+  }
+
+  &--cat-after {
+    object-position: right;
   }
 }
 

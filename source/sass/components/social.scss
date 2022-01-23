@@ -50,6 +50,10 @@
   &:focus {
     outline: 2px solid $black;
   }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .social__icon {

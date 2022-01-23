@@ -31,14 +31,14 @@
 
 .page__body--index {
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop.jpg"), linear-gradient(to top, rgb(67, 66, 71) 100%, rgb(67, 66, 71) 100%);
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop.jpg"), linear-gradient(to right, rgb(66, 66, 70) 50%, rgb(67, 66, 71) 50%);
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50% 694px, 50% 694px, 50% 694px;
+    background-size: 50% 694px, 720px 694px, 50% 694px;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop_2x.jpg"), linear-gradient(to top, rgb(67, 66, 71) 100%, rgb(67, 66, 71) 100%);
-    background-size: 50% 694px, 50% 694px, 50% 694px;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/index/promo-background-desktop_2x.jpg"), linear-gradient(to right, rgb(66, 66, 70) 50%, rgb(67, 66, 71) 50%);
+    background-size: 50% 694px, 720px 694px, 50% 694px;
   }
 }

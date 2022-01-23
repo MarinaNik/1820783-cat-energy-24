@@ -63,16 +63,16 @@
     box-sizing: border-box;
     margin: 0 auto;
     min-width: 450px;
-    max-width: 1330px;
+    max-width: 1440px;
     min-height: 472px;
     padding: 0;
-    padding-right: 745px;
-    padding-left: 135px;
+    padding-right: 800px;
+    padding-left: 190px;
     padding-top: 83px;
     background-image: url("../img/index/promo-image-desktop.png");
     background-size: 552px 499px;
     background-repeat: no-repeat;
-    background-position: 64% 0;
+    background-position: 63% 0;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {

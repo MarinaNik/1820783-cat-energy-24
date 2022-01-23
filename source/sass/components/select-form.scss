@@ -94,7 +94,7 @@
     padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     @media (min-width: $desktop-width) {
@@ -270,6 +270,16 @@
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
     }
+
+    .select-form__field {
+      padding-right: 50px;
+    }
+  }
+
+  &.select-form__data--phone {
+    .select-form__field {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -303,13 +313,13 @@
   box-sizing: border-box;
   padding: 12px 15px;
   height: 45px;
+  width: 100%;
   font-size: 16px;
   line-height: 18px;
   font-family: inherit;
   text-transform: uppercase;
   color: $gray-68;
   border: 1px solid $gray-231;
-  background-image: none;
 
   @media (min-width: $tablet-width) {
     padding: 10px 19px;
@@ -327,8 +337,8 @@
   }
 
   &:focus {
-    border: 2px solid $gray-68;
-    outline: none;
+    outline: 2px solid $gray-68;
+    border: 1px solid transparent;
   }
 
   &:focus + span .select-form__icon--mail {
@@ -429,8 +439,8 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   &:focus {
-    border: 2px solid $gray-68;
-    outline: none;
+    outline: 2px solid $gray-68;
+    border: 1px solid transparent;
   }
 }
 
